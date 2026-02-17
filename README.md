@@ -120,6 +120,27 @@ Depending on the severity, response actions may include:
 
 ---
 
+## Basic Linux Commands for Log Analysis
+
+Security analysts often use Linux commands to review and filter logs.
+
+- grep: Search for specific keywords inside logs
+- cat: Display log file contents
+- less: Scroll through large log files
+
+Example:
+grep "failed" auth.log
+
+## Basic SQL Example for Log Review
+
+Analysts may use SQL to search log data stored in databases.
+
+Example query to identify failed login attempts:
+
+SELECT * FROM logs
+WHERE status = 'failed_login';
+
+
 ## Why This Matters for a SOC Analyst
 
 Log analysis is a core responsibility of Security Operations Center (SOC)
@@ -132,7 +153,6 @@ This project demonstrates foundational log analysis and analyst thinking skills.
 
 ## Next Steps
 
-- Continue learning incident detection and response
-- Practice log analysis using hands-on labs
-- Learn how SIEM tools collect and correlate logs
-- Build more advanced SOC analyst projects
+- Continue developing SOC analyst skills
+- Practice hands-on log review
+- Learn how SIEM tools analyze logs
